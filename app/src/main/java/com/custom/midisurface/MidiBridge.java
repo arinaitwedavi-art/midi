@@ -105,7 +105,7 @@ public class MidiBridge {
             }
             MidiBridge.this.device = device;
 
-            if (device.getInputPortCount() < 1) {
+            if (chosen.getInputPortCount() < 1) {
                 closePort();
                 error("This device has no sendable port");
                 return;
