@@ -182,7 +182,7 @@ public class MidiBridge {
         MidiInputPort p = outPort;
         if (p == null) return;
         try {
-            p.send(msg);
+            p.send(msg, 0, msg.length);
         } catch (Exception ignored) {
         }
     }
